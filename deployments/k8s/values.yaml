@@ -1,5 +1,9 @@
 #@data/values
 ---
+docker_server:
+docker_username:
+docker_password:
+
 pod_webhook_image:
 setup_ca_certs_image:
 

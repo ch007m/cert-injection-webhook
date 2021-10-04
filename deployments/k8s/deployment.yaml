@@ -120,3 +120,9 @@ kind: ServiceAccount
 metadata:
   name: cert-injection-webhook-sa
   namespace: cert-injection-webhook
+#@ if data.values.docker_registry != "":
+secrets:
+  - name: reg-creds
+imagePullSecrets:
+  - name: reg-creds
+#@ end
